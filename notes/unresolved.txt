@@ -1,0 +1,75 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+FlipBitmapVert | libmerit3d.so
+FlipBitmapVert | luxor.so
+FileExists(char const*) | libmerit3d.so
+FileExists(char const*) | luxor.so
+Debug_Flag_Set(char const*, char const*) | luxor.so
+DisableTouchScreen() | luxor.so
+DoRegularProcessing() | libmerit3d.so
+debug_check_address(void*) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
+megastart(char const*, app_common::args_t*) | luxor.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
+TextSystem::GetTextSize(char const*, int, bool) | luxor.so
+TextSystem::ConvertToMarkup(char const*) | luxor.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | libmerit3d.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | luxor.so
+TextSystem::SetTextDescription(TextDesc const&) | libmerit3d.so
+TextSystem::SetTextDescription(TextDesc const&) | luxor.so
+TextSystem::UseDefaultTextDescription() | luxor.so
+Tournamaxx::Instance() | luxor.so
+CoinJamManager::RegisterCallback(void (*)(bool)) | luxor.so
+CoinJamManager::UnregisterCallback(void (*)(bool)) | luxor.so
+CoinJamManager::Instance() | luxor.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | luxor.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | luxor.so
+MyMeritManager::Instance() | libmeritbasegame.so
+MyMeritManager::Instance() | luxor.so
+ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
+ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | luxor.so
+USBIO::JoystickFound() | libmeritbasegame.so
+USBIO::JoystickFound() | luxor.so
+USBIO::Instance() | luxor.so
+Colour::black | libmerit3d.so
+Colour::black | luxor.so
+Colour::white | libmerit3d.so
+Colour::white | luxor.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | libmerit3d.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | luxor.so
+Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
+Merit3d::RenderToTexture::Destroy() | libmerit3d.so
+Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
+Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
+Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
+Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
+Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
+Merit3d::VideoObjectData::Play() | libmerit3d.so
+Merit3d::VideoObjectData::Stop() | libmerit3d.so
+Merit3d::VideoObjectData::Pause() | libmerit3d.so
+Merit3d::VideoObjectData::Update(float) | libmerit3d.so
+Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
+Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
+Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
+TextDesc::SetFontName(char const*) | libmerit3d.so
+TextDesc::SetFontName(char const*) | luxor.so
+TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
+MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
+MyMeritManager::PlayerLoaded() const | luxor.so
+MyMeritManager::Name() const | libmeritbasegame.so
+MyMeritManager::Name() const | luxor.so
+typeinfo for ExtendedCrashInfo | libmeritbasegame.so
+__aglXGetProcAddressARB | libmerit3d.so
+allegro_gl_flip | libmerit3d.so
+allegro_gl_flip | luxor.so
+ustricmp | luxor.so
+uszprintf | luxor.so
+voice_stop | luxor.so

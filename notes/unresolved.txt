@@ -4,11 +4,6 @@
 # symbol | needed by
 DisableTouchScreen() | luxor.so
 megastart(char const*, app_common::args_t*) | luxor.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
 Tournamaxx::Instance() | luxor.so
-USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | luxor.so
-USBIO::JoystickFound() | libmeritbasegame.so
-USBIO::JoystickFound() | luxor.so
 USBIO::Instance() | luxor.so
 ustricmp | luxor.so
-uszprintf | luxor.so
